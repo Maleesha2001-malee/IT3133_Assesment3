@@ -20,7 +20,7 @@ export default function StudentTable(props){
                             <td>{student.firstname}</td>
                             <td>{student.lastname}</td>
                             <td>{student.course}</td>
-                            <td>{student.address.countrty}</td>
+                            <td>{student.address.country}</td>
 
                         </tr>
 
