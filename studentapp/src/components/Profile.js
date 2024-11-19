@@ -4,9 +4,9 @@ export default function Profile(props){
         <table>
             <tr>
                 <td rowspan={7}>
-                    <img src={requestAnimationFrame('../assests/css/img/1.jpg')} alt="profile picture"/>
+                    <img className='profile' src={requestAnimationFrame('../assests/css/img/1.jpg')} alt="profile picture"/>
                 </td>
-                <td>ID {props.</td>
+                <td>ID {props.stu.studentId}</td>
             </tr>
         </table>
         </>
