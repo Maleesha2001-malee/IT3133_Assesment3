@@ -1,13 +1,13 @@
 export default function Profile(props){
-    console.log(props.stu);
     return(
         <>
-        <table>
+        <div>
+        <table border='1'>
             <tr>
                 <td rowspan={7}>
-                    <img className='profile' src={requestAnimationFrame('../assests/css/img/'+props.stu.profilePic)} alt="profile picture"/>
+                    <img className='profile' src={require('../assests/img/'+props.stu.profilePic)} alt="profile picture"/>
                 </td>
-                <td>ID {props.stu.studentId}</td>
+                <td>ID: {props.stu.studentId}</td>
             </tr>
             <tr>
                 <td>Full name:{props.stu.firstName+""+props.stu.lastName}</td>
@@ -26,6 +26,7 @@ export default function Profile(props){
             </tr>
 
         </table>
+        </div>
         </>
     );
 }
