@@ -5,12 +5,14 @@ export default function StudentTable(props){
         <div className="outerDiv">
            <div className="leftDiv">
             <table>
+              <thead>
                 <tr>
                     <td>First Name</td>
                     <td>Last Name</td>
                     <td>Course</td>
                     <td>Country</td>
                 </tr>
+               </thead>
             </table>
            </div>
         </div>
