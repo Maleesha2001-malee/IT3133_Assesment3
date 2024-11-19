@@ -1,8 +1,9 @@
+import '../assests/css/compo.css';
 export default function Profile(props){
     return(
         <>
         <div>
-        <table border='1'>
+        <table className='table' border='1'>
             <tr>
                 <td rowspan={7}>
                     <img className='profile' src={require('../assests/img/'+props.stu.profilePic)} alt="profile picture"/>
@@ -10,7 +11,7 @@ export default function Profile(props){
                 <td>ID: {props.stu.studentId}</td>
             </tr>
             <tr>
-                <td>Full name:{props.stu.firstName+""+props.stu.lastName}</td>
+                <td>Full name:{props.stu.firstName+" "+props.stu.lastName}</td>
             </tr>
             <tr>
                 <td>Age:{props.stu.age}</td>
